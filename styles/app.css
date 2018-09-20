@@ -52,7 +52,7 @@ a:link, a:visited {
     width: 100%;
     height: 100%;
     background-image: url("/images/sky2.jpg");
-    background-size:cover;
+    background-size: 100% 100%;
     color: white;    
     display: grid;
 }
@@ -75,7 +75,7 @@ h2 {
     background-size: cover;    
 }
 #team {
-    background-color: lightseagreen;
+    background-image: linear-gradient(#04889B, #C8CECC);
     display: grid;
     grid-template-areas: "head head head head head"
                          "member1 member2 member3 member4 member5";
@@ -105,7 +105,7 @@ h2 {
     grid-area: member5;
 }
 #contact {    
-    background-color: white;
+    background-image: linear-gradient(#C8CECC, #04889B);
 }
 .column {
     float: left;
@@ -113,5 +113,6 @@ h2 {
     height: 400px;    
 }
 .footer {
-    background-color: lightgray;
+    background-color: #04889B;
+    padding: 10px 0;
 }
