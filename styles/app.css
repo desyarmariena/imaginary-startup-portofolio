@@ -27,6 +27,23 @@ html, body {
 .container {
     height: 100%;
 }
+nav {
+    width: 100%;
+    position: fixed;
+    margin: 0 auto;    
+}
+ul li {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid white;
+    color: white;
+}
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+
+}
 #header, #profile, #team, #contact {
     height: 100%;
     min-height: 100%;    
@@ -45,21 +62,13 @@ h1 {
     font-family: "Merienda";
     font-size: 4em;
     color: rgba(255, 255, 255, 0.8);
+    /* Header tengah vertical dan horizontal*/
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 h2 {
     padding: 10% 0;
-}
-ul li {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid white;
-    color: white;
-}
-a:link, a:visited {
-    color: white;
-    text-decoration: none;
-
 }
 #profile {
     background-image: url("/images/sky.jpg");
