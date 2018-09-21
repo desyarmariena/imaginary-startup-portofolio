@@ -22,7 +22,9 @@
 html, body {
     height: 100%;      
     font-size: 16px;
+    
     text-align: center;
+    font-family: "Gotham Rounded Light";
 }
 nav {
     width: 100%;
@@ -56,8 +58,8 @@ a:link, a:visited {
 a, a:active,a:visited {color: white;
     text-decoration: none;}
 h1 {
-    font-family: "Merienda";
-    font-size: 4em;
+    font-family: "Aqua Grotesque";
+    font-size: 7em;
     color: rgba(255, 255, 255, 0.8);
     /* Header tengah vertical dan horizontal*/
     display: grid;
@@ -65,14 +67,16 @@ h1 {
     align-items: center;
 }
 h2 {
-    padding: 10% 0;
+    font-family: "Aqua Grotesque";
+    padding-top: 10%;
+    padding-bottom: 5%;
+    font-size: 5em;
 }
 #profile {
-    background-image: url("../images/sky.jpg");
-    background-size: cover;    
+    background-image: linear-gradient(#04889B, #C8CECC);
 }
 #team {
-    background-image: linear-gradient(#04889B, #C8CECC);
+    background-image: linear-gradient(#C8CECC, #04889B);
     display: grid;
     grid-template-areas: "head head head head head"
                          "member1 member2 member3 member4 member5";
@@ -101,15 +105,34 @@ h2 {
 .member5 {   
     grid-area: member5;
 }
-#contact {    
-    background-image: linear-gradient(#C8CECC, #04889B);
+#contact {
+    background-size: 100% 100%;
+    background-image: url("../images/sky.jpg");
+    background-size: cover;
+}
+#contact img {
+    /* Image icon berwarna putih */
+    filter: brightness(0) invert(1);
 }
 .column {
     float: left;
     width: 33.3%;
-    height: 400px;    
+    height: 100px;
 }
 .footer {
     background-color: #04889B;
     padding: 10px 0;
+}
+h4  {
+    font-family: "Gotham Rounded Light";
+    font-size: 2em; 
+    color: white;
+}
+p {
+    padding-top: 10px;
+    line-height: 2em;
+    max-width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.5em;
 }
